@@ -1,0 +1,40 @@
+.bg{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+}
+.first{
+    height: 125vh;
+    width: 20vw;
+    background-color: antiquewhite;
+    position: fixed;
+}
+.icon{
+    font-size: 12px;
+}
+.second{
+    height: 125vh;
+    width: 80vw;
+    background-color: aqua;
+    margin-left: 20vw;
+    
+}
+.container{
+    height: 111.2Vh;
+    width: 80vw;
+    background-color: beige;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+.card{
+    height: 55vh;
+    width: 18vw;
+    background-color: aquamarine;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+p{
+    font-size: 12px;
+    text-align: justify;
+}
+

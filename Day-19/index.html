@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            height: 65vh;
+            width: 30vw;
+            background-color: antiquewhite;
+            margin: auto;
+            position: relative;
+            border-radius: 5px;
+        }
+        h2{
+            color: blue;
+            text-align: center;
+        }
+        .photo{
+            height: 50px;
+            width: 50px;
+            border: 1px solid black;
+            border-radius: 50%;
+            background-image: url(./Bikash\ Pic\ 3\ copy.jpg);
+            position: absolute;
+            left: 40%;
+        }
+        .name{
+            margin-top: 70px;
+        }
+        .input{
+            width: 100px;
+        }
+
+        .pic1{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            background-image: url(./Bikash\ Pic\ 5\ copy.jpg);
+            position: absolute;
+            left: 5%;
+        }
+
+        .pic1:hover{
+            transform: translateY(-5px);
+            border-color: red;
+            z-index: 1;
+        }
+
+        .pic2{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            background-image: url(./Bikash\ Pic\ 3\ copy.jpg);
+            position: absolute;
+            left: 20%;
+            
+        }
+
+        .pic2:hover{
+            transform: translateY(-10px);
+            border-color: blue;
+            z-index: 2;
+        }
+
+        .pic3{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            background-image: url(./Bikash\ Pic\ 3\ copy.jpg);
+            position: absolute;
+            left: 30%;
+        }
+
+        .pic3:hover{
+            transform: translateY(-15px);
+            border-color: yellow;
+            z-index: 3;
+
+        }
+
+        .pic4{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            background-image: url(./Bikash\ Pic\ 3\ copy.jpg);
+            position: absolute;
+            left: 40%;
+        }
+
+        .pic4:hover{
+            transform: translateY(-20px);
+            border-color: aqua;
+            z-index: 4;
+        }
+
+        .pic5{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            background-image: url(./Bikash\ Pic\ 3\ copy.jpg);
+            position: absolute;
+            left: 50%;
+        }
+
+        .pic5:hover:hover{
+            transform: translateY(-25px);
+            border-color:blueviolet;
+            z-index: 5;
+        }
+
+        .container{
+            margin-left: 30px;
+            height: 100px;
+            width: 80px;
+            margin-top: 170px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr) ;
+        }
+        .contain1{
+            height: 100px;
+            width: 80px;
+            background-image: url(./Bikash\ Pic\ 3\ copy.jpg);
+        }
+        .contain2{
+            height: 100px;
+            width: 80px;
+            background-image: url(./Bikash\ Pic\ 5\ copy.jpg);
+        }
+        .contain3{
+            height: 100px;
+            width: 80px;
+            background-image: url(./Bikash\ Pic\ 3\ copy.jpg);
+        }
+        .contain4{
+            height: 100px;
+            width: 80px;
+            background-image: url(./Bikash\ Pic\ 5\ copy.jpg);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>ID Card</h2>
+        <div class="photo"></div>
+        <div class="name">
+            <span>Bikash&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Chaudhary</span>
+            </div><br>
+            <div class="pic1"></div>
+            <div class="pic2"></div>
+            <div class="pic3"></div>
+            <div class="pic4"></div>
+            <div class="pic5"></div>
+
+        <div class="container">
+            <div class="contain1"></div>
+            <div class="contain2"></div>
+            <div class="contain3"></div>
+            <div class="contain4"></div>
+        </div>
+    </div>
+</body>
+</html>

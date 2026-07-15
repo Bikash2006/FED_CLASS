@@ -1,0 +1,25 @@
+*{
+    background-color: antiquewhite;
+}
+ h1{
+            background-color: antiquewhite;
+            color:rgb(118, 118, 21);
+        }
+        h1, p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .container{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+        .child{
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            margin: 20px;
+        }
+        #text{
+            background-color: blueviolet;
+            color:white;
+        }

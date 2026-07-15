@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-sales Inquiry Form</title>
+    <link rel="stylesheet" href="./Bikash's Pre-sales inquiry form.css">
+</head>
+<body>
+    <form name="myForm" action="inquiry form.php" method="POST" onsubmit="return validateForm()">
+        <div class="card">
+            <h1>Pre-sales Inquiry Form</h1>
+            <label>Customer Name</label><br>
+            <input type="text" name="fname" placeholder="First"><br>
+            <input type="text" name="lname" placeholder="Last"><br>
+            <label>Email Address</label><br>
+            <input type="email" name="email"><br>
+            <label>Phone Number</label><br>
+            <input type="number" name="number"><br>
+            <label>Date of Inquiry</label><br>
+            <input type="date" name="date"><br>
+            <label>Product/Service Interest</label><br>
+            <textarea name="product_interest"></textarea><br>
+            <label>Questions about Features/Benefits</label><br>
+            <textarea name="questions"></textarea><br>
+            <label>Preferred Method of Response</label><br>
+            <input type="radio" name="method"> Email
+            <input type="radio" name="method"> Phone<br><br>
+            <div class="button">
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+    <script>
+        function validateForm()
+        {
+            let fname = document.getElementById("fname").value;
+            let lname = document.getElementById("lname").value;
+            let email = document.getElementById("email").value;
+            let number = document.getElementById("number").value;
+
+            if(fname == "")
+            {
+                alert("First name cannot be empty");
+                return false;
+            }
+
+            if(lname == "")
+            {
+                alert("Last name cannot be empty");
+                return false;
+            }
+
+            if(email == "")
+            {
+                alert("Email cannot be empty");
+                return false;
+            }
+
+            if(email.indexOf("@") == -1)
+            {
+                alert("Enter valid email");
+                return false;
+            }
+            if(number == "")
+            {
+                alert("Phone number cannot be empty");
+                return false;
+            }
+            if(number.length != 10)
+            {
+                alert("Phone number must be 10 digits");
+                return false;
+            }
+            if(isNaN(number))
+            {
+                alert("Phone number must contain only numbers");
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+</body>
+</html>

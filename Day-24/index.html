@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*text*/
+        p::first-line{
+            color: red;
+        }
+        p::first-letter{
+            font-size: 100px;
+        }
+        p.ff::first-line{
+            background-color: blue;
+        }
+        p#intro::first-line{
+            background-color: aquamarine;
+        }
+
+        /*Content pseudo elements*/
+        P::before{
+            content: url(../../);
+        }
+        p::after{
+            content: url(../../);
+        }
+        ul.hello li::marker{
+            color: blue;
+        }
+        ul li::selection{
+            color: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic tenetur minus repudiandae quam nulla, eos eligendi omnis quae laborum nobis libero esse tempore cupiditate eaque dicta laudantium commodi exercitationem temporibus.</p>
+    <p class="ff">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis neque illo porro, ducimus perspiciatis sed sunt fugit excepturi earum impedit nihil. Provident officia maxime dicta blanditiis omnis quo ullam quaerat.</p>
+    <p id="intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus culpa, explicabo voluptatum dolore, ratione repudiandae fugiat qui corrupti veniam vitae saepe assumenda est, laboriosam dolores at commodi incidunt minus sint. 
+    </p>
+    <ul class="hello">
+        <li>Hello</li>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </ul>
+    <ol>
+        <li>d</li>
+        <li>e</li>
+        <li>f</li>
+        <li>g</li>
+    </ol>
+</body>
+</html>

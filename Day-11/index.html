@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            height: 60vh;
+            width: 50vw;
+            background-image: url(./inquiry.jpg);
+            background-position: center;
+            margin: auto;
+        }
+        h1{
+            text-align: center;
+            color: blue;
+        }
+        table{
+            border: 2px solid black;
+            text-align: center;
+            color: red;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        tr, th, td{
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>This is the heading</h1>
+        <table>
+            <tr>
+                <th>S.No</th>
+                <th colspan="2">Name of Student</th>
+            </tr>
+            <tr>
+                <td rowspan="2">1</td>
+                <td>Bikash</td>
+                <td>Mahesh</td>
+            </tr>
+            <tr>
+                <td>Sarbin </td>
+                <td>Surendra</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
